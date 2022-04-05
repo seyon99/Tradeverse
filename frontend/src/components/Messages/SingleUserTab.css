@@ -1,0 +1,37 @@
+.textContainer {
+    align-items: center;
+    text-align: left;
+    margin-top: 3px;
+}
+
+.nameText {
+    font: bold;
+    font-size: large;
+}
+
+.messagePreview {
+    border-bottom: 1px solid lightgrey;
+    width: 300px;
+    height: 60px;
+    background-color: transparent;
+    padding-top: 5px;
+}
+
+.selectedMessagePreview {
+    border-bottom: 1px solid lightgrey;
+    width: 300px;
+    height: 60px;
+    background-color: rgb(237, 242, 251);
+    padding-top: 5px;
+}
+
+.profilePic {
+    position: relative;
+    border-radius: 50%;
+    width: 47px;
+    height: 47px;
+    margin-right: 10px;
+    margin-left: 8px;
+    margin-top: 1px;
+    border: 1px solid lightgrey;
+}
