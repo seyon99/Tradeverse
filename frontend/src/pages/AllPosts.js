@@ -12,6 +12,7 @@ import TextField from "@mui/material/TextField";
 import { Link } from 'react-router-dom';
 import PreviewIcon from '@mui/icons-material/Preview';
 import { DateRange } from "@mui/icons-material";
+import { SERVER_URL } from "../env";
 import axios from 'axios';
 
 const useStyles = makeStyles({
@@ -72,7 +73,7 @@ function AllPosts() {
     const [posts, setPosts] = useState([]);
     useEffect(async () => {
         try {
-            const posts = await axios.get(`${process.env.REACT_APP_API_URL}/post/allposts`);
+            const posts = await axios.get(`${SERVER_URL}/post/allposts`);
             console.log(posts);
             setPosts(posts.data);
         } catch (error) {
