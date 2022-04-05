@@ -16,6 +16,7 @@ import FlagIcon from '@mui/icons-material/Flag';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { deleteImg } from "../actions/image";
+import { SERVER_URL } from "../env";
 import axios from 'axios';
 
 const useStyles = makeStyles({
@@ -67,11 +68,11 @@ function MyBids(props) {
     const [offers, setOffers] = useState([]);
     useEffect(async () => {
         try {
-            const userBody = await axios.get(`${process.env.REACT_APP_API_URL}/users/${props.userID}`);
+            const userBody = await axios.get(`${SERVER_URL}/users/${props.userID}`);
             //console.log(`Getting user with user id: ${props.userID}`);
             const userName = userBody.data.user.userName;
             //console.log(`getting offers for user with userId: ${props.username}....`);
-            const offers = await axios.post(`${process.env.REACT_APP_API_URL}/offer/useroffers`, { user: userName });// TODO: change hardcoded user
+            const offers = await axios.post(`${SERVER_URL}/offer/useroffers`, { user: userName });// TODO: change hardcoded user
             console.log(offers.data.offers);
             setOffers(offers.data.offers);
         } catch (error) {
@@ -87,7 +88,7 @@ function MyBids(props) {
         setOffers(newOffers);
         try{
             await deleteImg(imgId);
-            await axios.delete(`${process.env.REACT_APP_API_URL}/offer/${itemId}`);
+            await axios.delete(`${SERVER_URL}/offer/${itemId}`);
         } catch(error){
             console.log(error)
         }
