@@ -1,7 +1,7 @@
 # team30
 
 ## Phase 2 Documentation
-### Setting up on local
+### Local Setup
 Using these running instructions is ideal for viewing our webpages with posts, messages, etc.
 ```
 git clone https://github.com/csc309-winter-2022/team30.git
@@ -10,7 +10,7 @@ git checkout dev // or remain on main branch
 npm run setup
 npm run startall
 ```
-### Setting up on local with a local db instance
+### Local Setup with Local MongoDB instance
 Replace the connection string in server.js with mongodb://0.0.0.0:27017/Tradeverse
 ```
 git clone https://github.com/csc309-winter-2022/team30.git
@@ -23,17 +23,7 @@ npm run startall
 The app should start locally on port 3001. Open http://localhost:3001 to view it.
 
 ### Deployed link
-Link: TODO
-
-### Login Credentials
-- ### Regular User
-  - username: user | password: user <br/>
-  - username: user2 | password: user2
-- ### Admin
-  - username: admin | password: admin 
-
-### Creating New Users
-New non-admin users can be created by clicking on the Sign Up button on the login page or the landing page. Admin users may be created by signing into the admin account using the credentials above and navigating to the admin dashboard. Alternatively, you may make a POST request to the first User endpoint (`http://localhost:3001/api/api/users/`) though Postman or a cURL command, although it is recommended to create an admin through the dashboard UI.
+https://tradeverse30.herokuapp.comTODO
 
 ### Features
 
