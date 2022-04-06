@@ -10,8 +10,7 @@ This web app was created with the purpose of allowing users to to trade items wi
   - Google Maps API
   - Cloudinary SDK
 
-## Phase 2 Documentation
-### Local Setup
+## Local Setup
 Using these running instructions is ideal for viewing our webpages with posts, messages, etc.
 ```
 git clone https://github.com/csc309-winter-2022/team30.git
@@ -20,7 +19,7 @@ git checkout dev
 npm run setup
 npm run startall
 ```
-### Local Setup with Local MongoDB instance
+## Local Setup with Local MongoDB instance
 Replace the connection string in server.js with mongodb://0.0.0.0:27017/Tradeverse
 ```
 git clone https://github.com/csc309-winter-2022/team30.git
@@ -32,45 +31,10 @@ npm run startall
 ```
 The app should start locally on port 3001. Open http://localhost:3001 to view it.
 
-### Deployed link
+## Deployed link
 https://tradeverse30.herokuapp.comTODO
 
-### Features
-
-- Sign in Page
-  - A regular user and admin user can login from the login page. The user will first be redirected to the Tradeverse landing page, which has an overview of what our app is about. Before logging in the user/admin only has access to the all posts page and the signin/up page. They will gain more access to all of the pages in the web app once they have logged in.
-
-- Users
-
-  - Sign up Page
-    - A regular user is able to create an account from the signup page by filling their data and then signing up.
-
-  - My Profile Page
-    - An user is able to change their account information such as their avatar, name, email, phone, password, addresses.
-
-  - My Posts Page
-    - The user is able to view their own items they have posted and edit the post. They view a more detailed version of their post with the trade offers and take down their post. The user is also able to create a new post.
-
-  - All Posts Page
-    - A user can view trade posts posted by other users on the “All Posts” page. A user can click on any post on the page and view more details about the post/trade offer in a seperate page. This page (individual posts) contains information like the preffered trade location (including a map), the username of the poster, a larger picture of the item, and all the active trade offers. The users can like/dislike any posts (other than ones posted by them), send a message to the trade owner ny clicking on the "Message Trademate" button, and make a trade offer for any post other than their own. They can also report posts to the admins (for inappropriate content, hate speech, etc.).
-
-  - My Bids Page
-    - Users can view an aggregation of all the bids they have made on Tradeverse they have made on this page and withdraw the bid. Once a bid is withdrawn, it will be removed from the post it was made under, and the My Bids page.
-
-  - Messages Page
-    - The message page should feel familiar for end users. There is a sidebar with tabs for each of the users that they have communicated with that they can click on to select which user to message. When clicking on the tab, they can see the messages that user has sent to them and the messages they sent to that user. They can also send new messages to that user.
-
-- Admins
-
-  - Reports page.
-    - The admin can view reports from users. Each report includes a link to a post so the admin can view the post. The admin can decide to ignore the report or to delete the post for which the report was made by clicking on the report, and viewing the post in question. The post will have two buttons on the bottom which allows the admin to remove the post based on the report, or ignore the report due to the post not violating an rules.
-
-  - Admin Dashboard
-    - Admins can delete users by providing the username of that user. They can also create new admin accounts by providing all the information needed to create a normal account (full name, email, username, password).
-    - Users can be deleted
-    - If a username or email is "taken" then an admin user cannot be created with that username or email. The unavailable usernames are "user", "admin", "user2" and the unavailable emails are "user@gmail.com", "admin@gmail.com", "user2@gmail.com".
-
-### Web API Endpoint Documentation
+## Web API Endpoint Documentation
 Note: REACT_APP_API_URL is an env variable that had the value http://localhost:3001/api/ (the root url for all of our APIs)
 
 #### Chat.js (Messaging API)
@@ -273,14 +237,3 @@ Note: REACT_APP_API_URL is an env variable that had the value http://localhost:3
   - Request body: one or more of email, firstName, lastName, avatarImg, avatarId, password
   - Request params: id (user document id)
   - Response: HTTP 200 and updated user document, 404 or 500 otherwise
-
-### Third-Party JS Libraries
-- [mui](https://mui.com/)
-- [Google Maps React](https://www.npmjs.com/package/google-map-react)
-- [Typed.js](https://mattboldt.github.io/typed.js/)
-- [Moment.js](https://momentjs.com)
-- [Cloudinary SDK](https://cloudinary.com/documentation/javascript_integration)
-
-### Third-Party External APIs
-- [Cloudinary Upload API](https://cloudinary.com/documentation/image_upload_api_reference)
-- [Google Maps API](https://developers.google.com/maps)
