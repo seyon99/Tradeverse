@@ -1,5 +1,6 @@
 # team30
 ## About
+This web app was created with the purpose of allowing users to to trade items with each other than than outright selling items for money. Users can post about an item they want to trade away, and other users can make bids on that item.
 
 ## Technologies Used
   - MongoDB
@@ -15,7 +16,7 @@ Using these running instructions is ideal for viewing our webpages with posts, m
 ```
 git clone https://github.com/csc309-winter-2022/team30.git
 cd team30
-git checkout dev // or remain on main branch
+git checkout dev
 npm run setup
 npm run startall
 ```
@@ -69,7 +70,7 @@ https://tradeverse30.herokuapp.comTODO
     - Users can be deleted
     - If a username or email is "taken" then an admin user cannot be created with that username or email. The unavailable usernames are "user", "admin", "user2" and the unavailable emails are "user@gmail.com", "admin@gmail.com", "user2@gmail.com".
 
-### API Endpoint Documentation
+### Web API Endpoint Documentation
 Note: REACT_APP_API_URL is an env variable that had the value http://localhost:3001/api/ (the root url for all of our APIs)
 
 #### Chat.js (Messaging API)
