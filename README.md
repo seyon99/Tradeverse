@@ -1,6 +1,6 @@
 # team30
 ## About
-This web app was created with the purpose of allowing users to to trade items with each other than than outright selling items for money. Users can post about an item they want to trade away, and other users can make bids on that item.
+This web app was created with the purpose of allowing users to to trade items with each other rather than outright selling items for money. Users can post about an item they want to trade away, and other users can make bids on that item.
 
 ## Technologies Used
   - MongoDB
