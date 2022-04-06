@@ -1,6 +1,8 @@
 # Tradeverse
 ## About
 This web app was created with the purpose of allowing users to to trade items with each other rather than outright selling items for money. Users can post about an item they want to trade away, and other users can make bids on that item.
+<br\>
+Deployed link: https://tradeverse30.herokuapp.com
 
 ## Technologies Used
   - MongoDB
@@ -30,9 +32,6 @@ mongod --dbpath mongo-data
 npm run startall
 ```
 The app should start locally on port 3001. Open http://localhost:3001 to view it.
-
-## Deployed link
-https://tradeverse30.herokuapp.comTODO
 
 ## Web API Endpoint Documentation
 Note: REACT_APP_API_URL is an env variable that had the value http://localhost:3001/api/ (the root url for all of our APIs)
