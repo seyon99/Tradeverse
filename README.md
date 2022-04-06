@@ -1,4 +1,13 @@
 # team30
+## About
+
+## Technologies Used
+  - MongoDB
+  - Express.js
+  - React.js
+  - Node.js
+  - Google Maps API
+  - Cloudinary SDK
 
 ## Phase 2 Documentation
 ### Local Setup
