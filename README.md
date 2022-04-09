@@ -15,7 +15,7 @@ Deployed link: https://tradeverse30.herokuapp.com
 ## Local Setup
 Using these running instructions is ideal for viewing our webpages with posts, messages, etc.
 ```
-git clone https://github.com/csc309-winter-2022/team30.git
+git clone https://github.com/seyon99/Tradeverse.git
 cd team30
 git checkout dev
 npm run setup
@@ -24,7 +24,7 @@ npm run startall
 ## Local Setup with Local MongoDB instance
 Replace the connection string in server.js with mongodb://0.0.0.0:27017/Tradeverse
 ```
-git clone https://github.com/csc309-winter-2022/team30.git
+git clone https://github.com/seyon99/Tradeverse.git
 cd team30
 npm run setup
 mkdir mongo-data
