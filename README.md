@@ -16,7 +16,7 @@ Deployed link: https://tradeverse30.herokuapp.com
 Using these running instructions is ideal for viewing our webpages with posts, messages, etc.
 ```
 git clone https://github.com/seyon99/Tradeverse.git
-cd team30
+cd Tradeverse
 git checkout dev
 npm run setup
 npm run startall
@@ -25,7 +25,7 @@ npm run startall
 Replace the connection string in server.js with mongodb://0.0.0.0:27017/Tradeverse
 ```
 git clone https://github.com/seyon99/Tradeverse.git
-cd team30
+cd Tradeverse
 npm run setup
 mkdir mongo-data
 mongod --dbpath mongo-data
