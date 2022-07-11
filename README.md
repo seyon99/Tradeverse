@@ -1,6 +1,6 @@
 # Tradeverse
 ## About
-This web app was created with the purpose of allowing users to to trade items with each other rather than outright selling items for money. Users can post about an item they want to trade away, and other users can make bids on that item.
+This web app was created with the purpose of allowing users to to trade items with each other, rather than outright selling items for money. Users can post about an item they want to trade away, and other users can make bids on that item.
 </br>
 Deployed link: https://tradeverse30.herokuapp.com
 
@@ -9,7 +9,7 @@ Deployed link: https://tradeverse30.herokuapp.com
   - Express.js
   - React.js
   - Node.js
-  - Google Maps API
+  - Google Cloud Platform (Google Maps API)
   - Cloudinary SDK
 
 ## Local Setup
