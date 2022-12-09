@@ -3,7 +3,6 @@
 ## About
 This web app was created with the purpose of allowing users to to trade items with each other, rather than outright selling items for money. Users can post about an item they want to trade away, and other users can make bids on that item.
 </br>
-Deployed link: https://tradeverse30.herokuapp.com
 
 ## Technologies Used
   - MongoDB
